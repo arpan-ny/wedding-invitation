@@ -19,9 +19,9 @@ export function Hero() {
       <p className="relative font-display text-sm tracking-[0.28em] text-muted uppercase">
         {hero.kicker}
       </p>
-      <h1 className="relative mt-4 font-script text-6xl leading-none text-accent-deep sm:text-7xl md:text-8xl">
+      <h1 className="relative mt-4 font-display text-5xl font-semibold leading-tight text-accent-deep sm:text-6xl md:text-7xl">
         {couple.partnerA}
-        <span className="mx-2 text-gold">&</span>
+        <span className="mx-2 font-script font-normal text-gold">&</span>
         {couple.partnerB}
       </h1>
       <h1 className="sr-only">
