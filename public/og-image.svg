@@ -1,10 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#faf3e8"/>
-  <circle cx="140" cy="120" r="160" fill="#e09a1a" opacity="0.35"/>
-  <circle cx="1080" cy="520" r="180" fill="#9b1d2a" opacity="0.28"/>
-  <text x="600" y="250" text-anchor="middle" font-size="42" fill="#c9a227" font-family="Georgia, serif">Together with their families</text>
-  <text x="600" y="360" text-anchor="middle" font-size="92" fill="#9b1d2a" font-family="Georgia, serif">Meera &amp; Arjun</text>
-  <text x="600" y="440" text-anchor="middle" font-size="36" fill="#3b2418" font-family="Georgia, serif">12 December 2026 · Jaipur</text>
-  <text x="600" y="510" text-anchor="middle" font-size="28" fill="#c9a227" font-family="Georgia, serif">#MeeraWedsArjun</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Lakshita and Arpan — Wedding Celebration</title>
+  <desc id="desc">Wedding celebration of Lakshita and Arpan on 25 and 26 November 2026 at The Elegance Resort, Chittorgarh, Rajasthan.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="1" stop-color="#f4e6d1"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8b45b"/>
+      <stop offset="0.5" stop-color="#a97927"/>
+      <stop offset="1" stop-color="#e3c879"/>
+    </linearGradient>
+    <pattern id="grain" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="5" r="1" fill="#9b1d2a" opacity=".07"/>
+      <circle cx="24" cy="22" r="1" fill="#a97927" opacity=".08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#paper)"/>
+  <rect width="1200" height="630" fill="url(#grain)"/>
+  <circle cx="90" cy="70" r="190" fill="#d8a33b" opacity=".13"/>
+  <circle cx="1120" cy="580" r="220" fill="#8f1f32" opacity=".10"/>
+
+  <!-- Double ornamental frame -->
+  <rect x="28" y="28" width="1144" height="574" rx="18" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <rect x="42" y="42" width="1116" height="546" rx="13" fill="none" stroke="#9b1d2a" stroke-width="1.5" opacity=".65"/>
+
+  <!-- Corner floral medallions -->
+  <g fill="none" stroke="url(#gold)" stroke-width="2.5" opacity=".9">
+    <g transform="translate(82 82)">
+      <path d="M0 0 C24 -4 34 8 34 30 C54 18 68 28 64 50 C42 48 30 60 30 82 C8 78 -2 64 8 46 C-12 34 -12 14 0 0Z"/>
+      <circle cx="28" cy="36" r="8"/><path d="M28 0V72M0 36H66" opacity=".55"/>
+    </g>
+    <g transform="translate(1118 82) scale(-1 1)">
+      <path d="M0 0 C24 -4 34 8 34 30 C54 18 68 28 64 50 C42 48 30 60 30 82 C8 78 -2 64 8 46 C-12 34 -12 14 0 0Z"/>
+      <circle cx="28" cy="36" r="8"/><path d="M28 0V72M0 36H66" opacity=".55"/>
+    </g>
+    <g transform="translate(82 548) scale(1 -1)">
+      <path d="M0 0 C24 -4 34 8 34 30 C54 18 68 28 64 50 C42 48 30 60 30 82 C8 78 -2 64 8 46 C-12 34 -12 14 0 0Z"/>
+      <circle cx="28" cy="36" r="8"/><path d="M28 0V72M0 36H66" opacity=".55"/>
+    </g>
+    <g transform="translate(1118 548) scale(-1 -1)">
+      <path d="M0 0 C24 -4 34 8 34 30 C54 18 68 28 64 50 C42 48 30 60 30 82 C8 78 -2 64 8 46 C-12 34 -12 14 0 0Z"/>
+      <circle cx="28" cy="36" r="8"/><path d="M28 0V72M0 36H66" opacity=".55"/>
+    </g>
+  </g>
+
+  <text x="600" y="142" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" letter-spacing="4" fill="#a97927">॥ शुभ विवाह ॥</text>
+  <path d="M420 168 H535 M665 168 H780" stroke="url(#gold)" stroke-width="2"/>
+  <path d="M600 158 l9 10 -9 10 -9 -10Z" fill="#9b1d2a"/>
+
+  <text x="600" y="272" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="88" fill="#8f1f32">Lakshita <tspan fill="#b58a3a">&amp;</tspan> Arpan</text>
+  <text x="600" y="328" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" letter-spacing="3" fill="#6b4b35">TOGETHER WITH THEIR FAMILIES</text>
+
+  <rect x="360" y="365" width="480" height="2" rx="1" fill="url(#gold)"/>
+  <text x="600" y="420" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="39" fill="#3b2418">25 – 26 November 2026</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#6b4b35">The Elegance Resort</text>
+  <text x="600" y="507" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#6b4b35">Chittorgarh, Rajasthan</text>
+
+  <text x="600" y="558" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="1.5" fill="#a97927">#ArpanWedsLakshita</text>
 </svg>

@@ -1,8 +1,8 @@
-# Abhishek & Neha — wedding site
+# Lakshita & Arpan — wedding site
 
 A single-page, config-driven wedding website built with Vite, React, Tailwind CSS v4, and Motion. It deploys to GitHub Pages.
 
-[Hosted website](https://abhishekj22.github.io/wedding-invitation/)
+[Hosted website](https://arpan-ny.github.io/wedding-invitation/)
 
 ## Edit the site (non-technical)
 
@@ -26,15 +26,16 @@ Placeholder SVGs ship so the gallery works before real photographs exist.
 
 Background music: replace `public/music/celebration.wav` or change `music.src` in the config. Music never autoplays; it starts after a tap on the floating control.
 
-## Enable GitHub Pages
+## Deploy to GitHub Pages
 
-1. Push this repository to GitHub.
-2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Push to `main`. The workflow in `.github/workflows/deploy.yml` builds and deploys.
+1. Make sure this repository is available at `arpan-ny/wedding-invitation` (transfer it there or create it under that account and push this project).
+2. In the repository, open **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**.
+3. Push to `main`. The workflow in `.github/workflows/deploy.yml` builds and publishes the site on every push to that branch.
+4. Open [https://arpan-ny.github.io/wedding-invitation/](https://arpan-ny.github.io/wedding-invitation/) after the workflow finishes. You can follow progress in the repository’s **Actions** tab.
 
-The workflow sets `VITE_BASE_PATH` to `/<repository-name>/`, which is required for **project** sites (`https://<user>.github.io/<repo>/`).
+The workflow sets `VITE_BASE_PATH` to `/<repository-name>/`, which is required for this **project** site (`https://<user>.github.io/<repo>/`).
 
-If this is a **user site** (`https://<user>.github.io`), build with `VITE_BASE_PATH=/` instead of deriving the path from the repository name.
+If you rename the repository, the workflow will use its new name as the base path; update `siteUrl` in `src/data/site.config.js` to match the new Pages URL.
 
 ## The base-path rule
 

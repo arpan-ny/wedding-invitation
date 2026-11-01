@@ -46,9 +46,9 @@ writeFileSync(
   <circle cx="140" cy="120" r="160" fill="#e09a1a" opacity="0.35"/>
   <circle cx="1080" cy="520" r="180" fill="#9b1d2a" opacity="0.28"/>
   <text x="600" y="250" text-anchor="middle" font-size="42" fill="#c9a227" font-family="Georgia, serif">Together with their families</text>
-  <text x="600" y="360" text-anchor="middle" font-size="92" fill="#9b1d2a" font-family="Georgia, serif">Meera &amp; Arjun</text>
+  <text x="600" y="360" text-anchor="middle" font-size="92" fill="#9b1d2a" font-family="Georgia, serif">Lakshita &amp; Arpan</text>
   <text x="600" y="440" text-anchor="middle" font-size="36" fill="#3b2418" font-family="Georgia, serif">12 December 2026 · Jaipur</text>
-  <text x="600" y="510" text-anchor="middle" font-size="28" fill="#c9a227" font-family="Georgia, serif">#MeeraWedsArjun</text>
+  <text x="600" y="510" text-anchor="middle" font-size="28" fill="#c9a227" font-family="Georgia, serif">#LakshitaWedsArpan</text>
 </svg>
 `,
 );
