@@ -29,8 +29,8 @@ Background music: replace `public/music/celebration.wav` or change `music.src` i
 ## Deploy to GitHub Pages
 
 1. Make sure this repository is available at `arpan-ny/wedding-invitation` (transfer it there or create it under that account and push this project).
-2. In the repository, open **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**.
-3. Push to `main`. The workflow in `.github/workflows/deploy.yml` builds and publishes the site on every push to that branch.
+2. In the repository, open **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**. This one-time step is required before the workflow can deploy.
+3. Push to `main`, or run **Deploy to GitHub Pages** from the **Actions** tab. The workflow in `.github/workflows/deploy.yml` builds and publishes the site on every push to that branch.
 4. Open [https://arpan-ny.github.io/wedding-invitation/](https://arpan-ny.github.io/wedding-invitation/) after the workflow finishes. You can follow progress in the repository’s **Actions** tab.
 
 The workflow sets `VITE_BASE_PATH` to `/<repository-name>/`, which is required for this **project** site (`https://<user>.github.io/<repo>/`).
