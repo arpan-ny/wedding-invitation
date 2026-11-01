@@ -16,6 +16,12 @@ Keep `navItems[].id` in sync with section ids (`hero`, `invitation`, `countdown`
 
 Also update `siteUrl` and `meta` in that file so WhatsApp / Open Graph previews point at your live GitHub Pages URL.
 
+The share preview uses `public/og-image.png` (1200 × 630). Its editable SVG artwork is `public/og-image.svg` and includes the hero logo. After changing the logo or preview artwork, regenerate the PNG from the repository root on macOS with:
+
+```bash
+npm run generate:og
+```
+
 ## Swap photos
 
 1. Add files under `public/photos/` (JPG, PNG, or SVG).
@@ -25,6 +31,10 @@ Also update `siteUrl` and `meta` in that file so WhatsApp / Open Graph previews 
 Placeholder SVGs ship so the gallery works before real photographs exist.
 
 Background music: replace `public/music/celebration.wav` or change `music.src` in the config. Music never autoplays; it starts after a tap on the floating control.
+
+## Change the hero logo
+
+Replace `public/images/arpan-lakshita-logo.png` with your own transparent PNG logo (keep the same filename), or update `hero.logoSrc` in `src/data/site.config.js`.
 
 ## Deploy to GitHub Pages
 

@@ -1,4 +1,5 @@
 import { site } from "../data/site.config";
+import { asset } from "../lib/asset";
 import { CornerMandala, FallingPetals } from "./Florals";
 
 export function Hero() {
@@ -23,7 +24,16 @@ export function Hero() {
         <span className="mx-2 text-gold">&</span>
         {couple.partnerB}
       </h1>
-      <p className="relative mt-6 font-display text-xl text-ink md:text-2xl">
+      <h1 className="sr-only">
+        {couple.partnerA} & {couple.partnerB}
+      </h1>
+      <img
+        src={asset(hero.logoSrc)}
+        alt={`A lovely story logo for ${couple.partnerA} and ${couple.partnerB}`}
+        className="relative my-2 max-h-[52dvh] w-full max-w-[min(82vw,28rem)] object-contain md:max-w-[32rem]"
+        fetchPriority="high"
+      />
+      <p className="relative mt-2 font-display text-xl text-ink md:text-2xl">
         {displayDate}
       </p>
       <p className="relative mt-1 font-display text-lg text-muted">{city}</p>

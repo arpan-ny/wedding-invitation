@@ -1,6 +1,6 @@
 /**
  * Wedding website configuration
- * Extracted from Lakshita & Arpan's wedding invitation PDF.
+ * Extracted from Arpan & Lakshita's wedding invitation PDF.
  */
 
 export const site = {
@@ -16,14 +16,14 @@ export const site = {
   ],
 
   meta: {
-    title: "Lakshita & Arpan — We're getting married",
+    title: "Arpan & Lakshita — We're getting married",
     description:
       "Join Lakshita and Arpan for their wedding celebrations on 25-26 November 2026 at The Elegance Resort, Chittorgarh, Rajasthan.",
   },
 
   couple: {
-    partnerA: "Lakshita",
-    partnerB: "Arpan",
+    partnerB: "Lakshita",
+    partnerA: "Arpan",
   },
 
   hashtag: "#ArpanWedsLakshita",
@@ -43,6 +43,7 @@ export const site = {
 
   hero: {
     kicker: "Together with their families",
+    logoSrc: "images/arpan-lakshita-logo.png",
     ctaLabel: "Open the invitation",
     ctaHref: "#invitation",
   },
@@ -52,7 +53,7 @@ export const site = {
     heading: "With the blessings of our families",
 
     paragraphs: [
-      "With the divine blessings of Shri Charbhuja Nath, we warmly invite you to celebrate the wedding of Lakshita and Arpan.",
+      "With the divine blessings of Shri Charbhuja Nath, we warmly invite you to celebrate the wedding of Arpan and Lakshita.",
 
       "Join us for two days of beautiful traditions, joyful celebrations, music, blessings, and togetherness as we begin this wonderful new chapter. Your presence and blessings will make our celebrations truly special.",
 
@@ -270,7 +271,7 @@ export const site = {
 
   footer: {
     closing: "We cannot wait to celebrate with you.",
-    crafted: "With love, from Lakshita & Arpan.",
+    crafted: "With love, from Arpan & Lakshita.",
   },
 };
 

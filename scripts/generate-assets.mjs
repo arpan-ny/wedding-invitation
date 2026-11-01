@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { site } from "../src/data/site.config.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const photosDir = join(root, "public", "photos");
@@ -41,14 +42,26 @@ palettes.forEach((palette, i) => {
 writeFileSync(
   join(root, "public", "og-image.svg"),
   `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#faf3e8"/>
-  <circle cx="140" cy="120" r="160" fill="#e09a1a" opacity="0.35"/>
-  <circle cx="1080" cy="520" r="180" fill="#9b1d2a" opacity="0.28"/>
-  <text x="600" y="250" text-anchor="middle" font-size="42" fill="#c9a227" font-family="Georgia, serif">Together with their families</text>
-  <text x="600" y="360" text-anchor="middle" font-size="92" fill="#9b1d2a" font-family="Georgia, serif">Lakshita &amp; Arpan</text>
-  <text x="600" y="440" text-anchor="middle" font-size="36" fill="#3b2418" font-family="Georgia, serif">12 December 2026 · Jaipur</text>
-  <text x="600" y="510" text-anchor="middle" font-size="28" fill="#c9a227" font-family="Georgia, serif">#LakshitaWedsArpan</text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">${site.couple.partnerA} and ${site.couple.partnerB} — Wedding Celebration</title>
+  <desc id="desc">${site.meta.description}</desc>
+  <rect width="1200" height="630" fill="#fbf0f4"/>
+  <rect x="24" y="24" width="1152" height="582" rx="24" fill="none" stroke="#c9a227" stroke-width="2"/>
+  <rect x="34" y="34" width="1132" height="562" rx="18" fill="none" stroke="#831843" stroke-width="1" opacity=".4"/>
+  <image xlink:href="${site.hero.logoSrc}" x="30" y="24" width="590" height="582" preserveAspectRatio="xMidYMid meet"/>
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <path d="M702 147 H825 M975 147 H1098" stroke="#c9a227" stroke-width="1.5"/>
+    <path d="M900 139 l8 8 -8 8 -8 -8Z" fill="#c9a227"/>
+    <text x="900" y="124" font-size="20" letter-spacing="3" fill="#8a4d68">TOGETHER WITH THEIR FAMILIES</text>
+    <text x="900" y="253" font-size="61" fill="#831843">${site.couple.partnerA}</text>
+    <text x="900" y="311" font-size="42" fill="#c9a227">&amp;</text>
+    <text x="900" y="373" font-size="61" fill="#831843">${site.couple.partnerB}</text>
+    <path d="M755 408 H1045" stroke="#c9a227" stroke-width="1.5"/>
+    <text x="900" y="463" font-size="31" fill="#3b1024">${site.displayDate.replace(" - ", " – ")}</text>
+    <text x="900" y="509" font-size="25" fill="#8a4d68">${site.events[0].venue}</text>
+    <text x="900" y="542" font-size="21" fill="#8a4d68">${site.city}</text>
+    <text x="900" y="578" font-size="19" letter-spacing="1" fill="#831843">${site.hashtag}</text>
+  </g>
 </svg>
 `,
 );
