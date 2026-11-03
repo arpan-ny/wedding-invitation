@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { site } from "../data/site.config";
 
 function remaining(iso) {
   const diff = new Date(iso).getTime() - Date.now();
@@ -12,7 +11,7 @@ function remaining(iso) {
   };
 }
 
-export function Countdown() {
+export function Countdown({ site }) {
   const { countdown, weddingDateIso } = site;
   const [parts, setParts] = useState(() => remaining(weddingDateIso));
 

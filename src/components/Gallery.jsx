@@ -1,5 +1,4 @@
 import { lazy, Suspense, useCallback, useState } from "react";
-import { site } from "../data/site.config";
 import { asset } from "../lib/asset";
 
 const Lightbox = lazy(() => import("./Lightbox"));
@@ -34,7 +33,7 @@ function Row({ photos, reverse, onOpen }) {
   );
 }
 
-export function Gallery() {
+export function Gallery({ site }) {
   const photos = site.gallery.photos;
   const midpoint = Math.ceil(photos.length / 2);
   const rowA = photos.slice(0, midpoint);
@@ -77,6 +76,7 @@ export function Gallery() {
             onClose={onClose}
             onPrev={onPrev}
             onNext={onNext}
+            site={site}
           />
         </Suspense>
       )}

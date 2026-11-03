@@ -1,9 +1,8 @@
 import { useEffect } from "react";
-import { site } from "../data/site.config";
 import { asset } from "../lib/asset";
 import { Icon } from "./Icon";
 
-export default function Lightbox({ photos, index, onClose, onPrev, onNext }) {
+export default function Lightbox({ photos, index, onClose, onPrev, onNext, site }) {
   const photo = photos[index];
   const { gallery } = site;
 

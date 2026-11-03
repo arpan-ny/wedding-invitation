@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { site } from "../data/site.config";
 import { Icon } from "./Icon";
 
-export function Venue() {
+export function Venue({ site }) {
   const { venue } = site;
   const [loaded, setLoaded] = useState(false);
 

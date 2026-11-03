@@ -41,9 +41,15 @@ export const site = {
 
   skipLink: "Skip to content",
 
+  languageSwitch: {
+    label: "Switch language to Hindi",
+    buttonLabel: "हिन्दी",
+  },
+
   hero: {
     kicker: "Together with their families",
     logoSrc: "images/arpan-lakshita-logo.png",
+    logoAlt: "A lovely story logo for Arpan and Lakshita",
     ctaLabel: "Open the invitation",
     ctaHref: "#invitation",
   },
@@ -53,14 +59,11 @@ export const site = {
     heading: "With the blessings of our families",
 
     paragraphs: [
-      "With the divine blessings of Shri Charbhuja Nath, we warmly invite you to celebrate the wedding of Arpan and Lakshita.",
-
-      "Join us for two days of beautiful traditions, joyful celebrations, music, blessings, and togetherness as we begin this wonderful new chapter. Your presence and blessings will make our celebrations truly special.",
-
-      "We look forward to celebrating with you at The Elegance Resort, Chittorgarh, on 25 and 26 November 2026.",
+      "With the divine blessings of Shri Charbhuja Nath and Shree Nath Ji, our families warmly invite you to celebrate Arpan and Lakshita's wedding.",
+      "Join us for two days of traditions, music, and joyful celebrations at The Elegance Resort, Chittorgarh, on 25 and 26 November 2026. Your presence and blessings will make our celebration truly special.",
     ],
 
-    signOff: "With love and warm regards, from our families",
+    signOff: "With love, from our families",
   },
 
   countdown: {
@@ -146,12 +149,12 @@ export const site = {
     },
 
     {
-      id: "baraat",
-      title: "Baraat Welcome",
+      id: "var-nikasi",
+      title: "Var Nikasi",
       date: "26 November 2026",
       time: "11:15 AM",
       venue: "The Elegance Resort, Chittorgarh",
-      note: "Welcoming the baraat as we come together for the wedding celebrations.",
+      note: "A beautiful tradition as the groom sets forth to begin his journey towards a lifetime of love and togetherness.",
       accent: "ruby",
       mapsUrl:
         "https://www.google.com/maps/search/?api=1&query=The+Elegance+Resort+Chittorgarh",
@@ -207,6 +210,19 @@ export const site = {
 
     facadeCaption:
       "Tap to load Google Maps. The map is not loaded until you ask, so the page stays light.",
+  },
+
+  contact: {
+    eyebrow: "We're here to help",
+    heading: "Contact our families",
+    description: "For any questions or assistance, please get in touch.",
+    callLabel: "Call",
+    whatsappLabel: "WhatsApp",
+    contacts: [
+      { name: "Om Prakash", phone: "9829046872" },
+      { name: "Kamal", phone: "9829646807" },
+      { name: "Satyam", phone: "9004077975" },
+    ],
   },
 
   gallery: {
@@ -288,6 +304,7 @@ export const navItems = [
   { id: "lineup", label: "Events" },
   { id: "venue", label: "Venue" },
   { id: "gallery", label: "Photos" },
+  { id: "contact", label: "Contact" },
 ];
 
 export default site;

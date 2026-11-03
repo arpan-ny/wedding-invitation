@@ -1,8 +1,7 @@
-import { site } from "../data/site.config";
 import { asset } from "../lib/asset";
 import { CornerMandala, FallingPetals } from "./Florals";
 
-export function Hero() {
+export function Hero({ site }) {
   const { couple, displayDate, city, hero } = site;
 
   return (
@@ -29,7 +28,7 @@ export function Hero() {
       </h1>
       <img
         src={asset(hero.logoSrc)}
-        alt={`A lovely story logo for ${couple.partnerA} and ${couple.partnerB}`}
+        alt={hero.logoAlt}
         className="relative my-2 max-h-[52dvh] w-full max-w-[min(82vw,28rem)] object-contain md:max-w-[32rem]"
         fetchPriority="high"
       />

@@ -1,8 +1,7 @@
-import { site } from "../data/site.config";
 import { getAccent } from "../lib/accentClasses";
 import { Icon } from "./Icon";
 
-export function Lineup() {
+export function Lineup({ site }) {
   const { lineup, events } = site;
 
   return (

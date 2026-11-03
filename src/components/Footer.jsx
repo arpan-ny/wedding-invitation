@@ -1,7 +1,6 @@
-import { site } from "../data/site.config";
 import { MarigoldGarland } from "./Florals";
 
-export function Footer() {
+export function Footer({ site }) {
   const { couple, displayDate, hashtag, footer } = site;
 
   return (

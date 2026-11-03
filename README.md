@@ -6,13 +6,15 @@ A single-page, config-driven wedding website built with Vite, React, Tailwind CS
 
 ## Edit the site (non-technical)
 
-All guest-facing content lives in **one file**:
+English guest-facing content and contact details live in:
 
 [`src/data/site.config.js`](src/data/site.config.js)
 
-Change names, the hashtag, dates, invitation copy, event line-up, venue, photos, music path, footer text, navigation labels, and the default colour theme there. You should not need to edit any React component to launch the site.
+Change names, the hashtag, dates, invitation copy, event line-up, venue, contact names and phone numbers, photos, music path, footer text, navigation labels, and the default colour theme there. Hindi translations live in [`src/data/locales.js`](src/data/locales.js).
 
-Keep `navItems[].id` in sync with section ids (`hero`, `invitation`, `countdown`, `lineup`, `venue`, `gallery`).
+The site includes an English/Hindi language switch in the top-right corner. Update both the English content and its Hindi translation when changing guest-facing copy.
+
+Keep `navItems[].id` in sync with section ids (`hero`, `invitation`, `countdown`, `lineup`, `venue`, `gallery`, `contact`).
 
 Also update `siteUrl` and `meta` in that file so WhatsApp / Open Graph previews point at your live GitHub Pages URL.
 

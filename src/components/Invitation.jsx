@@ -1,7 +1,6 @@
-import { site } from "../data/site.config";
 import { MarigoldGarland } from "./Florals";
 
-export function Invitation() {
+export function Invitation({ site }) {
   const { invitation, couple } = site;
 
   return (

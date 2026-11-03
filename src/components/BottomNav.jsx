@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { navItems } from "../data/site.config";
 
-export function BottomNav() {
+export function BottomNav({ navItems, navLabel }) {
   const [active, setActive] = useState(navItems[0]?.id);
 
   useEffect(() => {
@@ -38,12 +37,12 @@ export function BottomNav() {
       window.removeEventListener("resize", scheduleUpdate);
       if (frame) window.cancelAnimationFrame(frame);
     };
-  }, []);
+  }, [navItems]);
 
   return (
     <nav
       className="fixed bottom-4 left-1/2 z-40 w-[min(100%-1rem,36rem)] -translate-x-1/2"
-      aria-label="Page sections"
+      aria-label={navLabel}
     >
       <div className="nav-scroll rounded-full border border-gold/30 bg-page/95 px-2 py-1 shadow-lg backdrop-blur">
         <ul className="flex min-w-max items-center justify-between gap-1">
