@@ -13,7 +13,7 @@ import { MusicToggle } from "./components/MusicToggle";
 import { Contact } from "./components/Contact";
 
 export default function App() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("hi");
   const site = getSiteContent(language);
   const navItems = useMemo(() => getNavItems(language), [language]);
 

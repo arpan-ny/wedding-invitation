@@ -55,15 +55,15 @@ export const site = {
   },
 
   invitation: {
-    eyebrow: "A note from our families",
-    heading: "With the blessings of our families",
+    eyebrow: "With love and blessings",
+    heading: "The Nyati Family Invites You",
 
     paragraphs: [
-      "With the divine blessings of Shri Charbhuja Nath and Shree Nath Ji, our families warmly invite you to celebrate Arpan and Lakshita's wedding.",
+      "With the divine blessings of Shri Charbhuja Nath and Shree Nath Ji, the Nyati family warmly invites you to celebrate Arpan and Lakshita's wedding, with the love and blessings of the Mundra family.",
       "Join us for two days of traditions, music, and joyful celebrations at The Elegance Resort, Chittorgarh, on 25 and 26 November 2026. Your presence and blessings will make our celebration truly special.",
     ],
 
-    signOff: "With love, from our families",
+    signOff: "With love and blessings, Nyati & Mundra families",
   },
 
   countdown: {
@@ -219,9 +219,9 @@ export const site = {
     callLabel: "Call",
     whatsappLabel: "WhatsApp",
     contacts: [
-      { name: "Om Prakash", phone: "9829046872" },
-      { name: "Kamal", phone: "9829646807" },
-      { name: "Satyam", phone: "9004077975" },
+      { name: "Om Prakash Nyati", phone: "9829046872" },
+      { name: "Kamal Nyati", phone: "9829646807" },
+      { name: "Satyam Nyati", phone: "9004077975" },
     ],
   },
 
